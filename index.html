@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Border radius previewer</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1>Border radius preview</h1>
+            <h4>Created by IgorIA</h4>
+        </header>
+
+        <div id="container">
+
+            <div id="box-container">
+
+                <div id="box">Testing the box</div>
+
+            </div>
+                    
+            <div id="inputs">
+
+                <span class="value-top"> Top: </span><input class="value-top" type="text" value="0" /> </span>
+                <span class="value-right"> Right: <input class="value-right" type="text" value="0" /> </span>
+                <span class="value-down"> Down: <input class="value-bottom" type="text" value="0" /> </span>
+                <span class="value-left"> Left: <input class="value-left" type="text" value="0" /> </span>
+
+            </div>
+
+            <button id="applyValues" onclick="applyValuesToBox()" onkeypress="">Apply</button>
+
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
