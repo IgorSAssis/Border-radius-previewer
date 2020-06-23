@@ -14,23 +14,16 @@
 
         <div id="container">
 
+            <input id="value-top" class="valueGroup1" type="text" value="0"/>
+            <input id="value-right" class="valueGroup2" type="text" value="0"/>
+
             <div id="box-container">
-
                 <div id="box">Testing the box</div>
-
-            </div>
-                    
-            <div id="inputs">
-
-                <span class="value-top"> Top: </span><input class="value-top" type="text" value="0" /> </span>
-                <span class="value-right"> Right: <input class="value-right" type="text" value="0" /> </span>
-                <span class="value-down"> Down: <input class="value-bottom" type="text" value="0" /> </span>
-                <span class="value-left"> Left: <input class="value-left" type="text" value="0" /> </span>
-
             </div>
 
-            <button id="applyValues" onclick="applyValuesToBox()" onkeypress="">Apply</button>
-
+            <input id="value-bottom" class="valueGroup1" type="text" value="0"/>
+            <input id="value-left" class="valueGroup2" type="text" value="0"/>
+            <button id="apply" onclick="applyValuesToBox()" >Apply</button>
         </div>
         <script src="./app.js"></script>
     </body>

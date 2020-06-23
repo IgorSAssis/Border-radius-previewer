@@ -14,12 +14,12 @@ body {
 }
 
 #container {
-    margin: auto;
+    padding: 20px;
 }
 
 #box-container{
-    align-items: center;
     margin: auto;
+    flex: 1;
     background-color: rgba(165, 42, 42, 0.486);
     width: 350px;
     height: 350px;
@@ -33,7 +33,17 @@ body {
     border-radius: 0px 0px 0px 0px;
 }
 
-#inputs input {
-    border: thin solid black;
-    border-radius: 10px;
+.valueGroup1 {
+    float: left;
+    width: 40px;
+    margin-left: 400px;
+}
+.valueGroup2 {
+    float: right;
+    width: 40px;
+    margin-right: 400px;
+}
+
+#apply {
+    margin: 50px;
 }
