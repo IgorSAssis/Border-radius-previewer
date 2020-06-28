@@ -6,11 +6,22 @@ const leftInput = document.querySelector("input#value-left")
 
 const buttonApply = document.querySelector("button#apply")
 
-function applyValuesToBox(){
+function applyValues(event){
     let topInputValue = topInput.value
     let rightInputValue = rightInput.value
     let bottomInputValue = bottomInput.value
     let leftInputValue = leftInput.value
 
     box.style.borderRadius = `${topInputValue}px ${rightInputValue}px ${bottomInputValue}px ${leftInputValue}px`;    
+}
+
+function applyWithKeyBoard(event){
+    console.log(event)
+}
+
+function clearInputs() {
+    topInput.innerHTML = ""
+    rightInput.innerHTML = ""
+    bottomInput.innerHTML = ""
+    leftInput.innerHTML = ""
 }

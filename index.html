@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Border radius previewer</title>
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <header id="header">
-            <h1>Border radius preview</h1>
-            <h4>Created by IgorIA</h4>
-        </header>
 
-        <div id="container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border radius previewer</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
 
-            <input id="value-top" class="valueGroup1" type="text" value="0"/>
-            <input id="value-right" class="valueGroup2" type="text" value="0"/>
+<body>
+    <header id="header">
+        <h1>Border radius preview</h1>
+        <h4>Created by IgorIA</h4>
+    </header>
 
-            <div id="box-container">
-                <div id="box">Testing the box</div>
-            </div>
-
-            <input id="value-bottom" class="valueGroup1" type="text" value="0"/>
-            <input id="value-left" class="valueGroup2" type="text" value="0"/>
-            <button id="apply" onclick="applyValuesToBox()" >Apply</button>
+    <div id="container">
+        <div id="box-container">
+            <div id="box"></div>
         </div>
-        <script src="./app.js"></script>
-    </body>
+        <input id="value-top" type="text" value="0" maxlength="4"/>
+        <input id="value-right" type="text" value="0" maxlength="4"/>
+        <input id="value-bottom" type="text" value="0" maxlength="4"/>
+        <input id="value-left" type="text" value="0" maxlength="4"/>
+        <button id="apply" onclick="applyValues()" onkeypress="applyWithKeyBoard(event)">Apply values</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
 </html>
